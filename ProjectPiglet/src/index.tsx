@@ -4,15 +4,15 @@
  * @flow
  */
 
-import React, { Component } from 'react';
+import * as React from 'react'
 import {
   AppRegistry,
   StyleSheet,
   Text,
   View
-} from 'react-native';
+} from 'react-native'
 
-export default class ProjectPiglet extends Component {
+export default class ProjectPiglet extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -23,11 +23,11 @@ export default class ProjectPiglet extends Component {
           To get started, edit index.ios.js
         </Text>
         <Text style={styles.instructions}>
-          Press Cmd+R to reload,{'\n'}
-          Cmd+D or shake for dev menu
+          Press Cmd+R (iOS) or double-tap R (android) to reload,{'\n'}
+          Cmd+D (iOS) or Cmd+M (android) or shake for dev menu
         </Text>
       </View>
-    );
+    )
   }
 }
 
@@ -48,6 +48,6 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+})
 
-AppRegistry.registerComponent('ProjectPiglet', () => ProjectPiglet);
+AppRegistry.registerComponent('ProjectPiglet', () => ProjectPiglet)
